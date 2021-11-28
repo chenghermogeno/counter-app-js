@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<title>Number Guessing Game</title>
+<head>
+	<link href="./css/style.css" rel="stylesheet" type="text/css" />
+
+	<!-- prevents character encoding error -->
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<meta content="utf-8" http-equiv="encoding">
+
+	<!-- insert cs and js link -->
+</head>
+
+<body>
+
+<div id="container">
+
+	<section id="gameGuidelines">
+		<h1>Number guessing game</h1>
+		<p>We have selected a random number between 1 and 20. See if you can guess it in 10 turns or fewer. We'll tell you if your guess was too high or too low.</p>
+	</section>
+
+	<section id="submitGuessField">
+		<form>
+			<label>Enter a guess:</label>
+			<input type="text" id="guessField" value="">
+			<button class="submitButton" onclick="submitGuess(event)">Submit guess</button>
+		</form>
+
+	</section>
+
+	<section id="guessResult">
+
+	<!-- show up to 10 number guesses -->
+		<p class="prevGuesses"></p>
+
+	<!-- message: Wrong!if guess is wrong -->
+	<!-- Congratulations! You got it right! once guess is correct -->
+	<!-- !!!GAME OVER!!! if more than 10 tries -->
+		<p class="guessIndicator"></p>
+
+	<!-- Last guess was too low!/ Last guess was too high! -->
+	<!-- start game button if guess is correct/game over -->
+	<!-- start game button restarts the game -->
+		<p class="guessHighLow"></p>
+	</section>
+
+	
+
+
+</div>
+
+<script type="text/javascript" src="./js/guess.js"></script>
+
+</body>
+</html>
+
